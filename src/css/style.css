@@ -1,0 +1,127 @@
+*{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}/*Стилизация всех блоков*/
+h1{
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(16, 29, 37);
+}/*Создаие стиля для заголовков 1 уровня*/
+h3{
+    font-size: 150%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(16, 29, 37);
+}/*Создаие стиля для заголовков 3 уровня*/
+h4{
+    font-size: 140%;
+    font-family: 'Courier New', Courier, monospace;
+    font-variant: small-caps;
+    text-align: center;
+    color: rgb(16, 29, 37);
+}/*Создаие стиля для заголовков 4 уровня*/
+p{
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    line-height: 1.5;
+    margin: 5;
+}/*Стилизация основного текста*/
+a{
+    color:rgb(3, 33, 90);
+    font-size: 130%;
+    transition: 0.5s linear;
+}
+a:hover{
+    color: green;
+}
+li{
+    list-style-type: none;
+    text-indent: -1em;
+}
+#list > li::before{
+    content: '';
+    background-image: url('D:/Учёба/Web/Project/src/img/Маркер.png');
+    list-style-position: outside;
+    background-size: contain;  
+    width: 20px;
+    height: 20px;  
+    display: inline-block; 
+    padding: 0;
+}
+#header{
+    background: rgba(255, 214, 152, 0.603);
+    width: 100%;
+}
+.navigation{
+    width: 100%;
+    height: 65px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(252, 212, 127);
+    padding-left: 25px;
+    min-width: 470px;
+}/*Стиль основного блока меню*/
+.navigation, .navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}/*удаление маркеров списка в меню*/
+.navigation li{
+    float: left;
+    position: relative;
+    height: 100%;
+    transition: 0.5s linear;
+}/*создание горизонтального изображения списка*/
+.navigation li:hover ul{
+    display: block;
+} /*Показывать выпадающее меню где оно есть*/
+.navigation li a{
+    display: block;
+    padding: 6px;
+    width: 100px;
+    color: rgb(16, 76, 133);
+    text-decoration: none;
+    text-align: center;
+}/*Стилизация текста основного меню*/
+.navigation ul a:hover{
+    color:#f90;
+}/*Стилизация текста при наведении у выпадающем списке*/
+.navigation ul{
+    display: none;
+    background-color: #f90;
+    position: absolute;
+    top: 100%;
+    text-align: center;
+    transition: 0.5s linear;
+}/*Стилизация выпадающего меню*/
+.navigation ul li:hover{
+    background-color: rgb(16, 76, 133)
+}/*Стилизация при наведении на ссылку у выпадающем списке*/
+.navigation li:hover{
+    background-color: #f90
+}/*Стилизация при наведении на ссылку в основном меню*/
+.navigation ul li{
+    float: none;
+}/*Скрытие выпадающего списка*/
+
+#main{
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fadfa4;
+}/*Стилизация основного контента*/
+
+#footer{
+    display: flex;
+    position: relative;
+    justify-content: ;
+    background: rgba(255, 214, 152, 0.603); 
+}/*Стилизация подвала*/
+
